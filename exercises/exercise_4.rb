@@ -12,7 +12,7 @@ Whistler = Store.create(name: "Whistler", annual_revenue: 1900000 , mens_apparel
 Yaletown = Store.create(name: "Yaletown", annual_revenue: 430000, mens_apparel: true, womens_apparel: true)
 
 @mens_stores = Store.where(mens_apparel: true)
-@womens_stores = Store.where(womens_apparel: true)
+@womens_stores = Store.where( womens_apparel: true )
 # annual_revenue < 1000000
 puts @mens_stores
 
