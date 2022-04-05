@@ -25,4 +25,5 @@ end
 puts "please enter a store name"
 store_name = gets.chomp.to_s
 
-store = Store.create(name: store_name, womens_apparel: true)
+store = Store.create(name: store_name, mens_apparel: false, womens_apparel: true)
+# 
